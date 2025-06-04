@@ -444,7 +444,7 @@ function LoginSignup({ open, setOpen }) {
   return (
     <>
       <Toaster position="top-center" />
-      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+      <div className="fixed inset-0 flex items-center justify-center z-50 p-4 h-400px">
         <div className="bg-white rounded-2xl shadow-xl w-full max-w-md relative overflow-hidden animate-fadeIn">
           <button
             onClick={handleClose}
@@ -453,7 +453,7 @@ function LoginSignup({ open, setOpen }) {
             <X className="w-5 h-5" />
           </button>
 
-          <div className="p-8 h-auto">{currentContent}</div>
+          <div className="p-8">{currentContent}</div>
         </div>
       </div>
     </>
